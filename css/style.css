@@ -1,0 +1,197 @@
+body {
+  font-family: "Roboto";
+  opacity: 0;
+}
+
+.team-member img {
+  object-fit: cover;
+}
+
+header.masthead {
+  color: black;
+  padding-top: 6rem;
+}
+
+header.masthead .masthead-heading {
+  font-size: 3.5rem;
+}
+
+@media only screen and (max-width: 767.9px) {
+  header.masthead .masthead-heading {
+    font-size: 1.5rem;
+  }
+}
+
+.logo-header {
+  display: inline-block;
+  /* opacity: 0; */
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: -1.5rem;
+  margin-bottom: -1.5rem; */
+}
+
+@media only screen and (max-width: 767.9px) {
+  .logo-header {
+    margin-bottom: 2rem;
+  }
+}
+
+#mainNav {
+  /* background-color: rgba(255, 255, 255, .4); */
+  transition: box-shadow 0.5s ease-out, background-color 0.5s ease-out,
+    padding 0.5s ease-out;
+}
+
+@media only screen and (min-width: 992px) {
+  #mainNav::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.8) 50%,
+      transparent
+    );
+    z-index: -1;
+    transition: opacity 0.5s ease-out;
+  }
+
+  #mainNav.navbar-shrink::after {
+    opacity: 0;
+  }
+}
+
+ul.clients-showcase {
+  font-size: 4rem;
+  list-style: none;
+  padding: 0;
+}
+
+ul.clients-showcase > li {
+  padding: 0.5rem;
+}
+
+ul.clients-showcase > li > div {
+  background-color: white;
+  padding: 3.5rem;
+}
+
+@media only screen and (max-width: 991.9px) {
+  #mainNav {
+    background-color: transparent;
+  }
+}
+
+#mainNav.navbar-shrink {
+  background-color: white;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-weight: bold;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-secondary:not(:disabled):not(.disabled).active,
+.show > .btn-secondary.dropdown-toggle {
+  background-color: #7a8288;
+}
+
+.btn-secondary {
+  background-color: #545b62;
+}
+
+*::placeholder {
+  color: #424242 !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav-link {
+  transition: color 0.3s;
+  /* color: #797979 !important; */
+}
+
+
+/* .title ,.logo , .navbar-nav{
+  opacity: 0;
+} */
+
+.title {
+  font-style : oblique;
+  font-family : 'URW Chancery L, cursive' !important;
+  /* color: #797979 !important; */
+}
+
+.fadeIn {
+  opacity: 1;
+  animation-name: fadeInAnimation ;
+  animation-duration: 3s;
+}
+
+@keyframes fadeInAnimation {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.btn {
+  transition : background-color 1s;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  margin: 34px 0;
+}
+
+.flex div {
+  width: 334px;
+  /* min-width: 33%; */
+  margin: 1.5em;
+  border-radius: 5px;
+  /* background-color: red; */
+  padding: 1.5em;
+  /* box-shadow: 9px 3px 8px 6px #817e7f33; */
+  font-family: sans-serif !important;
+}
+
+@media (max-width: 991px) {
+  .flex {
+    flex-direction: column;
+    margin: 21px 0;
+  }
+
+  .flex div {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+
+  section#about div.flex{
+    margin: 40px 0 !important;
+    /* background-color: black; */
+  }
+}
+
+.white {
+  color: white !important;
+}
+
+.bg-pink {
+  background-color: #ff0146;
+}
+
+
+section#about div.flex{
+  margin: 1045px0px 0;
+  /* background-color: black; */
+}
