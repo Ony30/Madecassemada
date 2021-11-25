@@ -65,6 +65,20 @@ document.addEventListener('DOMContentLoaded', function (){
     // console.log(title.classList)
     var header = document.querySelector('body')
     header.classList.add('fadeIn')
-    console.log(header.classList)
+    // console.log(header.classList)
 
+/*on scroll event */
+    // let timeline = document.querySelector('.timeline')
+    // timeline.addEventListener('scroll', function() {
+    //     alert('ttt')
+    // })
+    // window.onscroll = function() {
+    //     if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+    //         alert('test')
+    //     }else {
+    //         alert('elese')
+    //     }
+    // }
 })
+
+on

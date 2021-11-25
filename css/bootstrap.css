@@ -4743,7 +4743,7 @@ input[type=button].btn-block {
 
 .card {
     position: relative;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
@@ -10554,9 +10554,9 @@ header.masthead .masthead-heading {
 }
 
 .team-member img {
-    width: 14rem;
-    height: 14rem;
-    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+    width: 9rem;
+    height: 9rem;
+    border: 0.3rem solid rgba(0, 0, 0, 0.1);
 }
 
 .team-member h4 {

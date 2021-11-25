@@ -195,3 +195,11 @@ section#about div.flex{
   margin: 1045px0px 0;
   /* background-color: black; */
 }
+
+.timeline {
+  margin-top: 117px !important;
+}
+
+.center {
+  justify-content: center;
+}
