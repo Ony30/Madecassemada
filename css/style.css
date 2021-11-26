@@ -135,7 +135,10 @@ ul.clients-showcase > li > div {
   opacity: 1;
   animation-name: fadeInAnimation ;
   animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
+
+
 
 @keyframes fadeInAnimation {
   from {opacity: 0;}
@@ -202,4 +205,8 @@ section#about div.flex{
 
 .center {
   justify-content: center;
+}
+
+.timeline li {
+  opacity: 0;
 }

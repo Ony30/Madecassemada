@@ -68,17 +68,18 @@ document.addEventListener('DOMContentLoaded', function (){
     // console.log(header.classList)
 
 /*on scroll event */
-    // let timeline = document.querySelector('.timeline')
-    // timeline.addEventListener('scroll', function() {
-    //     alert('ttt')
-    // })
-    // window.onscroll = function() {
-    //     if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
-    //         alert('test')
-    //     }else {
-    //         alert('elese')
-    //     }
-    // }
+    
 })
 
-on
+window.addEventListener('scroll', () => {
+    let content = document.querySelectorAll('.timeline li');
+    // console.log(content.length)
+    for ( var i=0 ; i <= content.length ; i++){
+        let contentPosition = content[i].getBoundingClientRect().top;
+        let screenPosition = window.innerHeight;
+        if(contentPosition < screenPosition) {
+            content[i].classList.add('fadeIn')
+        }
+    }
+})
+
