@@ -136,6 +136,7 @@ ul.clients-showcase > li > div {
   animation-name: fadeInAnimation ;
   animation-duration: 3s;
   animation-fill-mode: forwards;
+  animation-direction: normal;
 }
 
 
@@ -209,4 +210,5 @@ section#about div.flex{
 
 .timeline li {
   opacity: 0;
+  animation-timing-function: ease-in;
 }

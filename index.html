@@ -15,6 +15,29 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_GsusAU1nz2JiwSO0zdLMC');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        } -->
+    </script>
 </head>
 
 <body id="page-top">
@@ -89,56 +112,65 @@
             
             <ul class="timeline">
                 <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg"
-                            alt="" /></div>
+                    <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="./assets/img/offer.png"alt="" /></div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="subheading">Notre offre :</h4>
+                            <h4 class="subheading">Notre offre </h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">Nos services d’externalisation comptable s’adressent à toutes les entités françaises quelle que soit leur forme juridique, leur taille, leur secteur d’activité, … Entreprises, Sociétés Commerçants, Artisans Professions libérales, Agriculteurs, Cabinets comptables, Associations, Exploitants forestiers, Syndics de copropriété, Comités d’entreprise, SCI (Société Civile Immobilière), Loueurs de meublés non professionnels ou professionnels … etc </p>
+                            <p class="text-muted justify">
+                                Nos services d’externalisation comptable s’adressent à toutes les entités françaises quelle que soit leur forme juridique, leur taille, 
+                                leur secteur d’activité, … Entreprises, Sociétés Commerçants, Artisans Professions libérales, Agriculteurs, Cabinets comptables, Associations, 
+                                Exploitants forestiers, Syndics de copropriété, Comités d’entreprise, SCI (Société Civile Immobilière), Loueurs de meublés non professionnels ou professionnels … etc 
+                            </p>
                         </div>
                     </div>
                 </li>
                 <li class="timeline-inverted">
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg"
-                            alt="" /></div>
+                    <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="./assets/img/fonctionnement.png" alt="" />
+                    </div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
-                            <h4 class="subheading">Fonctionnement :</h4>
+                            <h4 class="subheading">Fonctionnement </h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">
-                                Pour profiter pleinement de notre service de saisie comptable externalisée, nous mettons gracieusement à votre disposition un système de coffre-fort numérique.
-
-Au fil des mois, vous numérisez à votre rythme les documents nécessaires à la bonne tenue de votre comptabilité et les déposez sur votre espace. Bien entendu, cet espace vous est dédié et vous bénéficiez ainsi gratuitement d’une conservation numérique sécurisée de vos documents.
+                            <p class="text-muted justify">
+                                Pour profiter pleinement de notre service de saisie comptable externalisée, 
+                                nous mettons gracieusement à votre disposition un système de coffre-fort numérique.Au fil des mois, 
+                                vous numérisez à votre rythme les documents nécessaires à la bonne tenue de votre comptabilité et les déposez sur votre espace. 
+                                Bien entendu, cet espace vous est dédié et vous bénéficiez ainsi gratuitement d’une conservation numérique sécurisée de vos documents.
                             </p>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg"
-                            alt="" /></div>
+                    <div class="timeline-image">
+                        <img class="rounded-circle img-fluid" src="./assets/img/benefit.png" alt="" />
+                    </div>
                     <div class="timeline-panel">
                         <div class="timeline-heading">
                             <h4 class="subheading">NOS +</h4>
                         </div>
                         <div class="timeline-body">
-                            <p class="text-muted">
-                                &bull; Aucun frais pour reprise des antérieurs et des a-nouveaux, y compris les tableaux d’immobilisations et d’amortissements.
-                            </p>
-                            <p class="text-muted">
-                                &bull;  Aucun engagement contractuel de durée
-                            </p>
-                            <p class="text-muted">
-                                &bull;  Un service totalement francophone, sans décalage horaire.
-                            </p>
-                            <p class="text-muted">
-                                &bull; La qualité de services assurée avec des comptables de niveau BAC+3/4
-                            </p>
-                            <p class="text-muted">
-                                &bull;  Le respect absolu de la confidentialité et du secret professionnel.
-                            </p>
+                            <ul class="">
+                                <li>
+                                    Aucun frais pour reprise des antérieurs et des a-nouveaux, y compris les tableaux d’immobilisations et d’amortissements.
+                                </li>
+                                <li>
+                                    Aucun engagement contractuel de durée
+                                </li>
+                                <li>
+                                    Un service totalement francophone, sans décalage horaire.
+                                </li>
+                                <li>
+                                    La qualité de services assurée avec des comptables de niveau BAC+3/4
+                                </li>
+                                <li>
+                                    Le respect absolu de la confidentialité et du secret professionnel.
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </li>
@@ -208,11 +240,11 @@ Au fil des mois, vous numérisez à votre rythme les documents nécessaires à l
                         <div class="form-group">
                             <label for="select" style="color: white;">Type de service</label>
                             <select class="form-control form-control-lg" id="order" name="order">
-                                <option value="print">Saisie des informations comptables</option>
-                                <option value="graphics">Rapprochement bancaire</option>
-                                <option value="webdesign">Revue et lettrage des comptes</option>
-                                <option value="events">Les écritures d’inventaire</option>
-                                <option value="community-management">Etablissement du bilan comptable</option>
+                                <option value="Saisie des informations comptables">Saisie des informations comptables</option>
+                                <option value="Rapprochement bancaire">Rapprochement bancaire</option>
+                                <option value="Revue et lettrage des comptes">Revue et lettrage des comptes</option>
+                                <option value="Les écritures d’inventaire">Les écritures d’inventaire</option>
+                                <option value="Etablissement du bilan comptable">Etablissement du bilan comptable</option>
                             </select>
                         </div>
                     </div>
@@ -220,7 +252,7 @@ Au fil des mois, vous numérisez à votre rythme les documents nécessaires à l
                 <div class="row align-items-stretch mb-5">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <input class="form-control" id="name" type="text" placeholder="Social / Nom *"
+                            <input class="form-control" name="name" id="name" type="text" placeholder="Social / Nom *"
                                 required="required"
                                 data-validation-required-message="Veuillez entrer votre nom / nom d'entreprise" />
                             <p class="help-block text-danger"></p>

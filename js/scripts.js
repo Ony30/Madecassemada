@@ -68,6 +68,18 @@ document.addEventListener('DOMContentLoaded', function (){
     // console.log(header.classList)
 
 /*on scroll event */
+
+    let form = document.querySelector("#contactForm")
+    form.addEventListener('submit', (event) => {
+        event.preventDefault()
+        let order = document.querySelector("#order").value;
+        let name = document.querySelector("#name").value;
+        let email = document.querySelector("#email").value;
+        let phone = document.querySelector("#phone").value;
+        let message = document.querySelector("#message").value;
+        let body = name + '%0D%0A' + message
+        window.open('mailto:madecassecompta@gmail.com?subject=Informations&body=' + body);
+    });
     
 })
 
@@ -81,5 +93,8 @@ window.addEventListener('scroll', () => {
             content[i].classList.add('fadeIn')
         }
     }
+    
+    console.log(line.classList)
 })
+
 
